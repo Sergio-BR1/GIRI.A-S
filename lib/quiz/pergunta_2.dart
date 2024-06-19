@@ -1,26 +1,18 @@
 import 'package:flutter/material.dart';
 
-import 'globals.dart'; // Importe a chave global
+import '../globals.dart';
+import 'pergunta_1.dart';
 
-void main() {
-  runApp(
-    const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: TelaQuiz(),
-    ),
-  );
-}
-
-class TelaQuiz extends StatefulWidget {
-  const TelaQuiz({super.key});
+class Pergunta2 extends StatefulWidget {
+  const Pergunta2({super.key});
 
   @override
-  State<TelaQuiz> createState() => _TelaQuizState();
+  State<Pergunta2> createState() => _Pergunta2State();
 }
 
-class _TelaQuizState extends State<TelaQuiz> {
+class _Pergunta2State extends State<Pergunta2> {
   bool buttonsEnabled = true;
-  int rightButton = 2;
+  int rightButton = 3;
   int pressedButton = 0;
 
   @override
@@ -31,17 +23,40 @@ class _TelaQuizState extends State<TelaQuiz> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            // const Row(
-            //   children: [
-            //     Countdown(),
-            //     Text(
-            //       'teste',
-            //       style: TextStyle(
-            //         color: Colors.white,
-            //       ),
-            //     )
-            //   ],
-            // ),
+            Row(
+              children: [
+                const SizedBox(
+                  width: 45,
+                ),
+                const Text(
+                  '0s',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
+                ),
+                const SizedBox(width: 350),
+                Column(
+                  children: [
+                    const Text(
+                      'Pontuação',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 15,
+                      ),
+                    ),
+                    Text(
+                      '${GlobalVariable.pontuacao}',
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 15,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+
             const Text(
               'Qual o significado?',
               style: TextStyle(
@@ -50,10 +65,10 @@ class _TelaQuizState extends State<TelaQuiz> {
                   fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 25),
-            const Image(image: AssetImage('../assets/images/Comer_agua.png')),
+            const Image(image: AssetImage('../assets/images/Baratino.png')),
             const SizedBox(height: 11),
             const Text(
-              'Comer água',
+              'Baratino',
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 24,
@@ -62,7 +77,7 @@ class _TelaQuizState extends State<TelaQuiz> {
 
             const SizedBox(height: 70),
             buildButton(
-              text: 'Chupar Gelo',
+              text: 'Comprar algo barato',
               color: const Color(0xFF2196F3),
               onPressed: () {
                 _onButtonPressed(1);
@@ -73,7 +88,7 @@ class _TelaQuizState extends State<TelaQuiz> {
 
             const SizedBox(height: 20),
             buildButton(
-              text: 'Beber álcool',
+              text: 'Matar barata',
               color: const Color(0xFFFFB300),
               onPressed: () {
                 _onButtonPressed(1);
@@ -84,7 +99,7 @@ class _TelaQuizState extends State<TelaQuiz> {
 
             const SizedBox(height: 20),
             buildButton(
-              text: 'Beber rápido',
+              text: 'Enganar alguém',
               color: const Color(0xFF9C27B0),
               onPressed: () {
                 _onButtonPressed(1);
@@ -139,12 +154,13 @@ class _TelaQuizState extends State<TelaQuiz> {
     await Future.delayed(const Duration(seconds: 3));
 
     GlobalVariable.navState.currentState?.push(
-      MaterialPageRoute(builder: (context) => const TelaQuiz()),
+      MaterialPageRoute(builder: (context) => const Pergunta1()),
     );
   }
 
   Color trueOrFalse(int buttonNumber) {
     if (buttonNumber == rightButton) {
+      GlobalVariable.pontuacao++;
       return const Color(0xFF4CAF50);
     }
     return const Color(0xFFF44336);

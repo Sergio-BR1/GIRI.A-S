@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'globals.dart'; // Importe a chave global
-import 'tela_quiz.dart'; // Importe a tela do quiz
+import 'globals.dart';
+import 'quiz/pergunta_1.dart';
 
 void main() {
   runApp(
@@ -17,7 +17,7 @@ class GIRIAS extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       navigatorKey: GlobalVariable.navState,
-      home: const TelaQuiz(),
+      home: const Pergunta1(),
     );
   }
 }

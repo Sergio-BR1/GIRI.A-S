@@ -1,0 +1,1 @@
+ C:\\Users\\nigga\\OneDrive\\Documentos\\Projetos\ Flutter\\curso_tomorrow\\.dart_tool\\flutter_build\\e08f82d9ac756f2c45bb93b303c205a1\\native_assets.yaml: 

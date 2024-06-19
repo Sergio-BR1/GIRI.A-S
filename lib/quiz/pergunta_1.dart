@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../globals.dart';
+import '../widgets/build_button.dart';
 import 'pergunta_2.dart';
 
 class Pergunta1 extends StatefulWidget {
@@ -79,10 +80,13 @@ class _Pergunta1State extends State<Pergunta1> {
               text: 'Chupar Gelo',
               color: const Color(0xFF2196F3),
               onPressed: () {
-                _onButtonPressed();
+                _onButtonPressed(1);
                 pressedButton = 1;
               },
               buttonNumber: 1,
+              rightButton: rightButton,
+              pressedButton: pressedButton,
+              buttonsEnabled: buttonsEnabled,
             ),
 
             const SizedBox(height: 20),
@@ -90,10 +94,13 @@ class _Pergunta1State extends State<Pergunta1> {
               text: 'Beber álcool',
               color: const Color(0xFFFFB300),
               onPressed: () {
-                _onButtonPressed();
+                _onButtonPressed(2);
                 pressedButton = 2;
               },
               buttonNumber: 2,
+              rightButton: rightButton,
+              pressedButton: pressedButton,
+              buttonsEnabled: buttonsEnabled,
             ),
 
             const SizedBox(height: 20),
@@ -101,10 +108,13 @@ class _Pergunta1State extends State<Pergunta1> {
               text: 'Beber rápido',
               color: const Color(0xFF9C27B0),
               onPressed: () {
-                _onButtonPressed();
+                _onButtonPressed(3);
                 pressedButton = 3;
               },
               buttonNumber: 3,
+              rightButton: rightButton,
+              pressedButton: pressedButton,
+              buttonsEnabled: buttonsEnabled,
             ),
             //Margem inferior
             const SizedBox(height: 45),
@@ -114,36 +124,8 @@ class _Pergunta1State extends State<Pergunta1> {
     );
   }
 
-//Cria botão
-  Widget buildButton({
-    required String text,
-    required Color color,
-    required VoidCallback onPressed,
-    required int buttonNumber,
-  }) {
-    return SizedBox(
-      height: 35,
-      width: 307,
-      child: ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          foregroundColor: Colors.white,
-          backgroundColor: color,
-          //verificar se esse é o botão certo
-          disabledBackgroundColor: pressedButton != buttonNumber
-              ? const Color(0xD1D9D9D9)
-              : trueOrFalse(buttonNumber),
-        ),
-        onPressed: buttonsEnabled ? onPressed : null,
-        child: Text(
-          text,
-          style: const TextStyle(
-              color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold),
-        ),
-      ),
-    );
-  }
-
-  Future<void> _onButtonPressed() async {
+  Future<void> _onButtonPressed(int buttonNumber) async {
+    if (buttonNumber == rightButton) GlobalVariable.pontuacao++;
     // Desabilita todos os botões
     setState(() {
       buttonsEnabled = false;
@@ -155,13 +137,5 @@ class _Pergunta1State extends State<Pergunta1> {
     GlobalVariable.navState.currentState?.push(
       MaterialPageRoute(builder: (context) => const Pergunta2()),
     );
-  }
-
-  Color trueOrFalse(int buttonNumber) {
-    if (buttonNumber == rightButton) {
-      GlobalVariable.pontuacao++;
-      return const Color(0xFF4CAF50);
-    }
-    return const Color(0xFFF44336);
   }
 }

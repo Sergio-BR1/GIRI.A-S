@@ -158,6 +158,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "timer_count_down",
+      "rootUri": "file:///C:/Users/nigga/AppData/Local/Pub/Cache/hosted/pub.dev/timer_count_down-2.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///C:/Users/nigga/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
@@ -176,7 +182,7 @@
       "languageVersion": "3.4"
     }
   ],
-  "generated": "2024-06-19T03:32:21.178201Z",
+  "generated": "2024-06-19T20:11:39.367774Z",
   "generator": "pub",
   "generatorVersion": "3.4.3",
   "flutterRoot": "file:///C:/Users/nigga/flutter",

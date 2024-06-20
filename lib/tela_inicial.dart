@@ -141,22 +141,6 @@ class _TelaInicialState extends State<TelaInicial> {
                       )),
                 ],
               ),
-              // Descomente esta parte se quiser um botão para ver a pontuação final
-              // SizedBox(
-              //   width: 319,
-              //   height: 28,
-              //   child: ElevatedButton(
-              //     style: ElevatedButton.styleFrom(
-              //       foregroundColor: Colors.white,
-              //       backgroundColor: const Color(0xFFAF46B8)
-              //     ),
-              //     onPressed: (){
-              //       Navigator.push(
-              //           context,
-              //           MaterialPageRoute(builder: (context) => const TelaFinal()));
-              //     },
-              //     child: const Text('Ver pontuação final'),
-              //   ),),
             ],
           ),
         ));

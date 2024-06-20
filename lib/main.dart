@@ -1,13 +1,13 @@
 import 'package:curso_tomorrow/tela_inicial.dart';
 import 'package:flutter/material.dart';
 
-import 'globals.dart'; // Importe a chave global
-import 'tela_quiz.dart'; // Importe a tela do quiz
+import 'globals.dart';
+//import 'quiz/nordeste/pergunta_1_nordeste.dart';
 
-void main() {
-  runApp(
-    const GIRIAS(),
-  );
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await GlobalVariable.init();
+  runApp(const GIRIAS());
 }
 
 class GIRIAS extends StatelessWidget {

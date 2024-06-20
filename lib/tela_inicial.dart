@@ -1,3 +1,9 @@
+import 'package:curso_tomorrow/quiz/centroOeste/pergunta_1_centro_oeste.dart';
+import 'package:curso_tomorrow/quiz/nordeste/pergunta_1_nordeste.dart';
+import 'package:curso_tomorrow/quiz/norte/pergunta_1_norte.dart';
+import 'package:curso_tomorrow/quiz/sudeste/pergunta_1_sudeste.dart';
+import 'package:curso_tomorrow/quiz/sul/pergunta_1_sul.dart';
+import 'package:curso_tomorrow/tela_final.dart';
 import 'package:flutter/material.dart';
 
 class TelaInicial extends StatefulWidget {
@@ -12,15 +18,10 @@ final imagem =  const AssetImage('../assets/images/imagem_inicial.png');
 
 final titulo = const AssetImage('../assets/images/titulo.png');
 
-var norte = false;
 
-var nordeste = false;
 
-var sudeste = false;
 
-var centro = false;
 
-var sul = false;
 
 @override
   Widget build(BuildContext context) {
@@ -32,7 +33,7 @@ var sul = false;
           children: [
             Image(image: titulo),
             Image(image: imagem),
-             const Text('Escolha uma ou mais opções abaixo', style:TextStyle(fontSize: 20, color: Colors.white)), 
+             const Text('Escolha uma opção abaixo', style:TextStyle(fontSize: 20, color: Colors.white)), 
               
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -46,7 +47,11 @@ var sul = false;
                     foregroundColor: Colors.white,
                     backgroundColor: const Color(0xFF33A920)
                   ),
-                  onPressed: (){},
+                  onPressed: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Pergunta1Norte()));
+                  },
                   child: const Text('Gírias do Norte'),
                 )
                 ),
@@ -58,7 +63,11 @@ var sul = false;
                     foregroundColor: Colors.white,
                     backgroundColor: const Color(0xFFF4BF36)
                   ),
-                  onPressed: (){},
+                  onPressed: (){
+                     Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Pergunta1Nordeste()));
+                  },
                   child: const Text('Gírias do Nordeste'),
                 )
                 ),
@@ -70,7 +79,11 @@ var sul = false;
                     foregroundColor: Colors.white,
                     backgroundColor: const Color(0xFFF44336)
                   ),
-                  onPressed: (){},
+                  onPressed: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Pergunta1Sudeste()));
+                  },
                   child: const Text('Gírias do Sudeste'),
                 )
                 )
@@ -86,7 +99,11 @@ var sul = false;
                     foregroundColor: Colors.white,
                     backgroundColor: const Color(0xFF33A920)
                   ),
-                  onPressed: (){},
+                  onPressed: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Pergunta1CentroOeste()));
+                  },
                   child: const Text('Gírias do Centro-Oeste'),
                 )
                 ),
@@ -98,7 +115,11 @@ var sul = false;
                     foregroundColor: Colors.white,
                     backgroundColor: const Color(0xFFF4BF36)
                   ),
-                  onPressed: (){sul ==  false ? sul = true : sul = false;},
+                  onPressed: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Pergunta1Sul()));
+                  },
                   child: const Text('Gírias do Sul'),
                 )),
            ]),
@@ -110,21 +131,13 @@ var sul = false;
                   foregroundColor: Colors.white,
                   backgroundColor: const Color(0xFFAF46B8)
                 ),
-                onPressed: (){},
-                child: const Text('Todas as opções'),
+                onPressed: (){
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const TelaFinal()));
+                },
+                child: const Text('ver placar'),
               ),),
-              SizedBox(
-                width: 319 ,
-                height: 100 ,
-                 child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  foregroundColor: Colors.white,
-                  backgroundColor: const Color.fromARGB(255, 0, 0, 0)
-                ),
-                onPressed: (){},
-                child: const Text('INICIAR', 
-                style: TextStyle(fontSize: 40),)
-              ))
 
         ],),)
 

@@ -63,7 +63,7 @@ class _TelaInicialState extends State<TelaInicial> {
                             foregroundColor: Colors.white,
                             backgroundColor: const Color(0xFF33A920)),
                         onPressed: () {
-                          Navigator.push(
+                          Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>
@@ -79,7 +79,7 @@ class _TelaInicialState extends State<TelaInicial> {
                             foregroundColor: Colors.white,
                             backgroundColor: const Color(0xFFF4BF36)),
                         onPressed: () {
-                          Navigator.push(
+                          Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>
@@ -95,7 +95,7 @@ class _TelaInicialState extends State<TelaInicial> {
                             foregroundColor: Colors.white,
                             backgroundColor: const Color(0xFFF44336)),
                         onPressed: () {
-                          Navigator.push(
+                          Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>
@@ -116,7 +116,7 @@ class _TelaInicialState extends State<TelaInicial> {
                             foregroundColor: Colors.white,
                             backgroundColor: const Color(0xFFD08310)),
                         onPressed: () {
-                          Navigator.push(
+                          Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>
@@ -132,7 +132,7 @@ class _TelaInicialState extends State<TelaInicial> {
                             foregroundColor: Colors.white,
                             backgroundColor: const Color(0xFF3660F4)),
                         onPressed: () {
-                          Navigator.push(
+                          Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => const Pergunta1Sul()));

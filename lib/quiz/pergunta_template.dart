@@ -38,7 +38,7 @@ class _PerguntaTemplateState extends State<PerguntaTemplate> {
       backgroundColor: const Color(0xFF2B2B2B),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.end,

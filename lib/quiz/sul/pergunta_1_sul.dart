@@ -17,7 +17,7 @@ class Pergunta1Sul extends StatelessWidget {
       caminhoImagem: '../assets/images/Cacetinho.png',
       giria: 'Cacetinho',
       proximaPerguntaCallback: () {
-        GlobalVariable.navState.currentState?.push(
+        GlobalVariable.navState.currentState?.pushReplacement(
           MaterialPageRoute(builder: (context) => const Pergunta2Sul()),
         );
       },

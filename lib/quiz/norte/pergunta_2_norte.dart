@@ -17,7 +17,7 @@ class Pergunta2Norte extends StatelessWidget {
       caminhoImagem: '../assets/images/Levou_o_farelo.png',
       giria: 'Levou o farelo',
       proximaPerguntaCallback: () {
-        GlobalVariable.navState.currentState?.push(
+        GlobalVariable.navState.currentState?.pushReplacement(
           MaterialPageRoute(builder: (context) => const TelaFinal()),
         );
       },

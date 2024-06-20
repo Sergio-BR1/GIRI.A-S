@@ -17,7 +17,7 @@ class Pergunta2Nordeste extends StatelessWidget {
       caminhoImagem: '../assets/images/Baratino.png',
       giria: 'Baratino',
       proximaPerguntaCallback: () {
-        GlobalVariable.navState.currentState?.push(
+        GlobalVariable.navState.currentState?.pushReplacement(
           MaterialPageRoute(builder: (context) => const TelaFinal()),
         );
       },

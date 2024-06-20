@@ -1,0 +1,1 @@
+ C:\\Users\\nigga\\Downloads\\GIRI.A.-S-main\\GIRI.A.-S-main\\.dart_tool\\flutter_build\\18f8b41b245ce1a376450c461c79c2a6\\native_assets.yaml: 

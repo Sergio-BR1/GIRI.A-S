@@ -13,7 +13,7 @@ class Pergunta2CentroOeste extends StatelessWidget {
       rightButton: 1,
       textButton1: 'Bêbado',
       textButton2: 'Mecânico',
-      textButton3: 'Acidene',
+      textButton3: 'Acidente',
       caminhoImagem: '../assets/images/Borracho.png',
       giria: 'Borracho',
       proximaPerguntaCallback: () {

@@ -8,11 +8,11 @@ class GlobalVariable {
     _prefs = await SharedPreferences.getInstance();
   }
 
-  static Future<void> setCounter(int value) async {
+  static Future<void> setPontuacao(int value) async {
     await _prefs.setInt('pontuacaoTotal', value);
   }
 
-  static int getCounter() {
+  static int getPontuacao() {
     return _prefs.getInt('pontuacaoTotal') ?? 0;
   }
 

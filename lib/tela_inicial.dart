@@ -26,7 +26,7 @@ class _TelaInicialState extends State<TelaInicial> {
   }
 
   void _loadPontuacao() async {
-    await GlobalVariable.init(); // Inicializa SharedPreferences
+    await GlobalVariable.init(); 
     setState(() {
       _pontuacaoTotal = GlobalVariable.getPontuacao();
     });
@@ -114,7 +114,7 @@ class _TelaInicialState extends State<TelaInicial> {
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                             foregroundColor: Colors.white,
-                            backgroundColor: const Color(0xFF33A920)),
+                            backgroundColor: const Color(0xFFD08310)),
                         onPressed: () {
                           Navigator.push(
                               context,
@@ -130,7 +130,7 @@ class _TelaInicialState extends State<TelaInicial> {
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                             foregroundColor: Colors.white,
-                            backgroundColor: const Color(0xFFF4BF36)),
+                            backgroundColor: const Color(0xFF3660F4)),
                         onPressed: () {
                           Navigator.push(
                               context,

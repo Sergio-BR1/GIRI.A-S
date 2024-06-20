@@ -17,7 +17,7 @@ class Pergunta1Nordeste extends StatelessWidget {
       caminhoImagem: '../assets/images/Comer_agua.png',
       giria: 'Comer água',
       proximaPerguntaCallback: () {
-        GlobalVariable.navState.currentState?.push(
+        GlobalVariable.navState.currentState?.pushReplacement(
           MaterialPageRoute(builder: (context) => const Pergunta2Nordeste()),
         );
       },

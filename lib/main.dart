@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'globals.dart';
-import 'quiz/nordeste/pergunta_1.dart';
+import 'quiz/nordeste/pergunta_1_nordeste.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,7 +17,7 @@ class GIRIAS extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       navigatorKey: GlobalVariable.navState,
-      home: const Pergunta1(),
+      home: const Pergunta1Nordeste(),
     );
   }
 }

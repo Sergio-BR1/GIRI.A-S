@@ -2,23 +2,23 @@ import 'package:flutter/material.dart';
 
 import '../../globals.dart';
 import '../pergunta_template.dart';
-import 'pergunta_2.dart';
+import 'pergunta_2_sudeste.dart';
 
-class Pergunta1 extends StatelessWidget {
-  const Pergunta1({super.key});
+class Pergunta1Sudeste extends StatelessWidget {
+  const Pergunta1Sudeste({super.key});
 
   @override
   Widget build(BuildContext context) {
     return PerguntaTemplate(
       rightButton: 1,
-      textButton1: 'Confiável',
-      textButton2: 'Grosso',
-      textButton3: 'Resiliente',
+      textButton1: 'Falar Sério',
+      textButton2: 'Queixo quadrado',
+      textButton3: 'Conversa de frene',
       caminhoImagem: '../assets/images/Comer_agua.png',
-      giria: 'De rocha',
+      giria: 'Papo reto',
       proximaPerguntaCallback: () {
         GlobalVariable.navState.currentState?.push(
-          MaterialPageRoute(builder: (context) => const Pergunta2()),
+          MaterialPageRoute(builder: (context) => const Pergunta2Sudeste()),
         );
       },
     );

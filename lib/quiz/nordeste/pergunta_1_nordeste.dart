@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../../globals.dart';
 import '../pergunta_template.dart';
-import 'pergunta_2.dart';
+import 'pergunta_2_nordese.dart';
 
-class Pergunta1 extends StatelessWidget {
-  const Pergunta1({super.key});
+class Pergunta1Nordeste extends StatelessWidget {
+  const Pergunta1Nordeste({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class Pergunta1 extends StatelessWidget {
       giria: 'Comer água',
       proximaPerguntaCallback: () {
         GlobalVariable.navState.currentState?.push(
-          MaterialPageRoute(builder: (context) => const Pergunta2()),
+          MaterialPageRoute(builder: (context) => const Pergunta2Nordeste()),
         );
       },
     );

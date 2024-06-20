@@ -20,7 +20,7 @@ class TelaFinalState extends State<TelaFinal> {
   }
 
   void _loadPontuacao() async {
-    await GlobalVariable.init(); // Inicializa SharedPreferences
+    await GlobalVariable.init(); 
     setState(() {
       _pontuacaoTotal = GlobalVariable.getPontuacao();
       _incrementPontuacao(GlobalVariable.pontuacao);
@@ -87,7 +87,7 @@ class TelaFinalState extends State<TelaFinal> {
                     foregroundColor: Colors.white,
                     backgroundColor: const Color(0xFF063DFF)),
                 onPressed: () {
-                  Navigator.push(
+                  Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
                           builder: (context) => const TelaInicial()));

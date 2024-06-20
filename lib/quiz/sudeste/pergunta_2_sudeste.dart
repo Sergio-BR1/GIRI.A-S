@@ -17,7 +17,7 @@ class Pergunta2Sudeste extends StatelessWidget {
       caminhoImagem: '../assets/images/71.png',
       giria: '71',
       proximaPerguntaCallback: () {
-        GlobalVariable.navState.currentState?.push(
+        GlobalVariable.navState.currentState?.pushReplacement(
           MaterialPageRoute(builder: (context) => const TelaFinal()),
         );
       },

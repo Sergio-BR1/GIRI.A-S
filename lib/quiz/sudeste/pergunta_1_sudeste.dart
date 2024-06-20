@@ -14,7 +14,7 @@ class Pergunta1Sudeste extends StatelessWidget {
       textButton1: 'Falar Sério',
       textButton2: 'Queixo quadrado',
       textButton3: 'Conversa de frene',
-      caminhoImagem: '../assets/images/Comer_agua.png',
+      caminhoImagem: '../assets/images/Papo_reto.png',
       giria: 'Papo reto',
       proximaPerguntaCallback: () {
         GlobalVariable.navState.currentState?.push(

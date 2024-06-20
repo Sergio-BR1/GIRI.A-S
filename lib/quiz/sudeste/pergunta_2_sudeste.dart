@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../globals.dart';
 import '../pergunta_template.dart';
 
-class Pergunta2 extends StatelessWidget {
-  const Pergunta2({super.key});
+class Pergunta2Sudeste extends StatelessWidget {
+  const Pergunta2Sudeste({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,11 +13,11 @@ class Pergunta2 extends StatelessWidget {
       textButton1: 'Soteropolitano',
       textButton2: 'Idoso',
       textButton3: 'Vigarista',
-      caminhoImagem: '../assets/images/Baratino.png',
+      caminhoImagem: '../assets/images/71.png',
       giria: '71',
       proximaPerguntaCallback: () {
         GlobalVariable.navState.currentState?.push(
-          MaterialPageRoute(builder: (context) => const Pergunta2()),
+          MaterialPageRoute(builder: (context) => const Pergunta2Sudeste()),
         );
       },
     );

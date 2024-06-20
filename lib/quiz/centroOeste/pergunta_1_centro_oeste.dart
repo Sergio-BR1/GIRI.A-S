@@ -14,7 +14,7 @@ class Pergunta1CentroOeste extends StatelessWidget {
       textButton1: 'Luva de boxe',
       textButton2: 'Algo grande',
       textButton3: 'Corte de carne',
-      caminhoImagem: '../assets/images/Comer_agua.png',
+      caminhoImagem: '../assets/images/Bitelo.png',
       giria: 'Bitelo',
       proximaPerguntaCallback: () {
         GlobalVariable.navState.currentState?.push(

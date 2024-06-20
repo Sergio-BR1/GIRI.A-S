@@ -14,7 +14,7 @@ class Pergunta1Norte extends StatelessWidget {
       textButton1: 'Confiável',
       textButton2: 'Grosso',
       textButton3: 'Resiliente',
-      caminhoImagem: '../assets/images/Comer_agua.png',
+      caminhoImagem: '../assets/images/De_rocha.png',
       giria: 'De rocha',
       proximaPerguntaCallback: () {
         GlobalVariable.navState.currentState?.push(

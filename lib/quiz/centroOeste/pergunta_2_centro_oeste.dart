@@ -17,7 +17,7 @@ class Pergunta2CentroOeste extends StatelessWidget {
       caminhoImagem: '../assets/images/Borracho.png',
       giria: 'Borracho',
       proximaPerguntaCallback: () {
-        GlobalVariable.navState.currentState?.push(
+        GlobalVariable.navState.currentState?.pushReplacement(
           MaterialPageRoute(builder: (context) => const TelaFinal()),
         );
       },

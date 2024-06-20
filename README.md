@@ -9,6 +9,6 @@ O projeto GIRI.A's consiste em uma aplicação em flutter, um jogo onde o usuúa
 - Mário Sérgio Brito Pires Santos
 
 ## Screenshots
-![Tela Inicial](screenshots/Tela_inicial.png)
+![Tela Inicial](screenshots/Tela_Inicial.png)
 ![Tela de Perguntas](screenshots/Tela_de_perguntas.png)
 ![Tela Final](screenshots/Tela_final.png)

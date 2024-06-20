@@ -1,3 +1,4 @@
+import 'package:curso_tomorrow/tela_final.dart';
 import 'package:flutter/material.dart';
 
 import '../../globals.dart';
@@ -17,7 +18,7 @@ class Pergunta2CentroOeste extends StatelessWidget {
       giria: 'Borracho',
       proximaPerguntaCallback: () {
         GlobalVariable.navState.currentState?.push(
-          MaterialPageRoute(builder: (context) => const Pergunta2CentroOeste()),
+          MaterialPageRoute(builder: (context) => const TelaFinal()),
         );
       },
     );

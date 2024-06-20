@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../globals.dart';
 import '../pergunta_template.dart';
-import 'pergunta_2_nordese.dart';
+import 'pergunta_2_nordeste.dart';
 
 class Pergunta1Nordeste extends StatelessWidget {
   const Pergunta1Nordeste({super.key});

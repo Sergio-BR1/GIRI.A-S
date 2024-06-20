@@ -1,10 +1,11 @@
+import 'package:curso_tomorrow/tela_final.dart';
 import 'package:flutter/material.dart';
 
 import '../../globals.dart';
 import '../pergunta_template.dart';
 
-class Pergunta2 extends StatelessWidget {
-  const Pergunta2({super.key});
+class Pergunta2Nordeste extends StatelessWidget {
+  const Pergunta2Nordeste({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class Pergunta2 extends StatelessWidget {
       giria: 'Baratino',
       proximaPerguntaCallback: () {
         GlobalVariable.navState.currentState?.push(
-          MaterialPageRoute(builder: (context) => const Pergunta2()),
+          MaterialPageRoute(builder: (context) => const TelaFinal()),
         );
       },
     );

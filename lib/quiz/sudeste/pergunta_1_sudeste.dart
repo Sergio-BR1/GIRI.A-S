@@ -13,7 +13,7 @@ class Pergunta1Sudeste extends StatelessWidget {
       rightButton: 1,
       textButton1: 'Falar Sério',
       textButton2: 'Queixo quadrado',
-      textButton3: 'Conversa de frene',
+      textButton3: 'Conversa de frente',
       caminhoImagem: '../assets/images/Papo_reto.png',
       giria: 'Papo reto',
       proximaPerguntaCallback: () {

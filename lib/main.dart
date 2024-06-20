@@ -2,10 +2,13 @@ import 'package:curso_tomorrow/tela_inicial.dart';
 import 'package:flutter/material.dart';
 
 import 'globals.dart';
-//import 'quiz/nordeste/pergunta_1_nordeste.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
+late final SharedPreferences prefs;
+  
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  prefs = await SharedPreferences.getInstance();
   await GlobalVariable.init();
   runApp(const GIRIAS());
 }

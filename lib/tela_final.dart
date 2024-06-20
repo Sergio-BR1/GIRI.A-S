@@ -14,13 +14,7 @@ class TelaFinal extends StatelessWidget {
           children: [
             const Image(image: AssetImage('../assets/images/fim-de-jogo.png')),
             const Text('Placar de Líderes', style: TextStyle(color: Colors.white, fontSize: 40)),
-            Container(
-              width: 330,
-              height: 285,
-              color: Colors.purple,
-              padding: EdgeInsets.all(10),
-              child: const Text("ele                oi")
-            ),
+            const LeaderBoard(),
             SizedBox(
               width: 307,
               height: 49,
@@ -40,5 +34,22 @@ class TelaFinal extends StatelessWidget {
           ],
         ))
     ));
+  }
+}
+
+class LeaderBoard extends StatelessWidget {
+  const LeaderBoard({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 330,
+      height: 285,
+      color: Colors.purple,
+      padding: const EdgeInsets.all(10),
+      child: const Text("a                oi")
+    );
   }
 }

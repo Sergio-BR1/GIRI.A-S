@@ -17,7 +17,7 @@ class Pergunta1CentroOeste extends StatelessWidget {
       caminhoImagem: '../assets/images/Bitelo.png',
       giria: 'Bitelo',
       proximaPerguntaCallback: () {
-        GlobalVariable.navState.currentState?.push(
+        GlobalVariable.navState.currentState?.pushReplacement(
           MaterialPageRoute(builder: (context) => const Pergunta2CentroOeste()),
         );
       },
